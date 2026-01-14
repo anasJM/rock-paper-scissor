@@ -1,20 +1,28 @@
 // console.log( Math.floor(Math.random() * 3) + 1 );
 
 function getComputerChoice() {
-    let randomNumber = Math.floor(Math.random() * 3) + 1;
+    let randomNumber;
+    randomNumber = Math.floor(Math.random() * 3) + 1;
     switch (randomNumber) {
         case 1:
-            return "Rock";
+            return "rock";
             break;
 
         case 2:
-            return "Paper";
+            return "paper";
             break;
         
         case 3:
-            return "Scissor";
+            return "scissor";
             break;
     }
 }
 
 console.log(getComputerChoice());
+
+function getHumanChoice() {
+    let humanChoice;
+    return humanChoice = window.prompt("write your choice, rock, paper or scissor'");
+}
+
+console.log(getHumanChoice());
